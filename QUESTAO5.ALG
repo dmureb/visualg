@@ -24,5 +24,11 @@ mult <- num1 * num2
 divisao <- num1 / num2
 resto <- num1 % num2
 
+escreval("A soma desses dois números: ", soma)
+escreval("A subtração do primeiro pelo segundo número é: ", sub1)
+escreval("A subtração do segundo pelo primeiro número é: ", sub2)
+escreval("A multiplicação desses dois números: ", mult)
+escreval("A divisao desses dois números: ", divisao)
+escreva("A resto da divisão dois números: ", resto)
 
 Fimalgoritmo
