@@ -15,4 +15,15 @@ leia(n2)
 escreva("Informe outro número: ")
 leia(n3)
 
+maior <- n1
+
+se maior < n2 entao
+   maior <- n2
+fimse
+
+se maior < n3 entao
+   maior <- n3
+fimse
+
+escreva("O maior número é: ", maior)
 Fimalgoritmo
