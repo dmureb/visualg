@@ -12,6 +12,7 @@ enquanto (contador <= 200) faca
    se (contador % 4 = 0) entao
    escreva(contador)
    fimse
+   contador <- contador + 1
 fimenquanto
 
 Fimalgoritmo
