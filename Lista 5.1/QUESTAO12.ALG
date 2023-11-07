@@ -2,40 +2,65 @@ Algoritmo "questao12"
 
 Var
 // Seção de Declarações das variáveis 
-num: inteiro
-maior: inteiro
-menor: inteiro
-total_respostas: inteiro
-soma: inteiro
+num, maior, menor, soma, media, contmedia: real
+
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
+
+escreva("Informe um número: (-1 encerra o programa)")
 leia(num)
+
 maior <- num
 menor <- num
-total_respostas <- 0
-soma <- 0
+soma <- 0 //acumulador, se for mult ou div começa com 1, soma e sub começa com 0
+contmedia <- 0
 
-enquanto (num <> -1) faca
-    soma <- soma + num
-    total_respostas <- total_respostas + 1
+enquanto ( num <> -1 ) faca
+         escreval("Valor inserido: ", num)
 
-    se (maior < num e num <> -1) entao
-        maior <- num
-    fimse
-
-    se (menor > num e num != -1) entao
-        menor <- num
-    fimse
-
-    leia(num)
+         soma <- soma + num
+         contmedia <- contmedia + 1
+         
+         se ( maior < num  ) entao
+            maior <- num
+         fimse
+         
+         se ( menor > num) entao
+            menor <- num
+         fimse
+         
+         escreval("Informe outro número: (-1 encerra o programa)")
+         leia(num)
+         
 fimenquanto
 
-se (maior = -1) entao
-    escreva("Você inseriu -1 na primeira resposta. PROGRAMA ENCERRADO!")
-senao
-    escreva("O maior número é: ", maior)
-    escreva("O menor número é: ", menor)
-    escreva("Média dos valores inseridos:", soma/total_respostas)
-    escreva("FIM DO PROGRAMA")
-fimse
+media <- soma / contmedia
+
+
+escreval("Valor final MAIOR: ", maior)
+escreval("Valor final MENOR: ", menor)
+escreval("Valor final MEDIA: ", media)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Fimalgoritmo
