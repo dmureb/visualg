@@ -13,18 +13,18 @@ leia(num)
 
 se num < 1000 entao
    escreva("Seu número é menor que 1000")
-fimse
+senao
+   se (num >= 1000) e (num <= 5000) entao
+       escreval("Seu número está entre 1000 e 5000")
+   senao
+      se (num >= 5000) e (num <= 8000) entao
+         escreval("Seu número está entre 5000 e 8000")
+      senao
+           escreva("Seu número é maior que 8000")
+      fimse
+      fimse
+      fimse
 
-se (num >= 1000) e (num <= 5000) entao
-    escreval("Seu número está entre 1000 e 5000")
-fimse
-
-se (num >= 5000) e (num <= 8000) entao
-   escreval("Seu número está entre 5000 e 8000")
-fimse
-
-se num > 8000 entao
-   escreva("Seu número é maior que 8000")
-fimse
 
 Fimalgoritmo
+

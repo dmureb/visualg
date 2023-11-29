@@ -4,11 +4,25 @@ Algoritmo "QUESTAO14"
 // 65 anos.
 
 Var
-// Seção de Declarações das variáveis 
+idade: inteiro
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva("Qual é a sua idade? ")
+leia(idade)
+
+se idade < 18 entao
+   escreva("Você é menor de idade.")
+fimse
+
+se (idade > 18) e (idade < 65) entao
+   escreva("Você é maior de idade.")
+fimse
+
+se idade > 65 entao
+   escreva("Você tem mais que 65 anos.")
+fimse
+
 
 
 Fimalgoritmo
